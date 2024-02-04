@@ -1,0 +1,394 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;700&display=swap'); */
+
+@font-face {
+    font-family: "sofia-sans-bold";
+    src: url(../fonts/SofiaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "sofia-sans-light";
+    src: url(../fonts/SofiaSans-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sofia-sans-bold;
+}
+
+@media (max-width : 750px) {
+    .em {
+        font-size: 8px !important
+    }
+}
+
+/* Global Styles */
+
+.block {
+    overflow: hidden;
+}
+
+p {
+    font-family: sofia-sans-light;
+    color: rgba(68, 68, 68, 1)
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none
+}
+
+button,
+input[type="submit"] {
+    background: #1bc8e4;
+    color: white !important;
+    opacity: .8;
+    cursor: pointer;
+    transition: all .3s ease
+}
+
+button:hover,
+input[type="submit"]:hover {
+    opacity: 1
+}
+
+a[data-slide="prev"],
+a[data-slide="next"] {
+    background: #1bc8e4;
+    color: white
+}
+
+#services i {
+    color: #1bc8e4;
+    padding: .2em
+}
+
+/*-------- Start Tools --------*/
+
+.mainColor {
+    color: rgb(27, 200, 228);
+}
+
+.tools h5 {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.6em;
+}
+
+.tools .line {
+    margin: 1em auto;
+    overflow: hidden;
+    padding: 1em 0.5em;
+}
+
+.tools {
+    width: 200px;
+    position: fixed;
+    left: -200px;
+    top: 10px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, .8);
+    z-index: 100;
+    color: white;
+    transition: left .4s ease;
+}
+
+.tools span {
+    padding: .2em;
+    background: #30aae9;
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.tools i:not(.fa-close) {
+    padding: .2em;
+    background: #282a2b;
+    margin: 5% 2%;
+    display: inline-block;
+    width: calc(88%/3);
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .3s ease
+}
+
+.tools i:hover {
+    opacity: 1
+}
+
+/*-------- End Tools --------*/
+
+.app {
+    width: 98%;
+    margin: 6em auto 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 0px #e8e8e8;
+}
+
+.logo {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+}
+
+ul {
+    list-style: none;
+    width: 20%;
+    float: left
+}
+
+.tab {
+    padding: .85em;
+    position: relative;
+    float: left;
+    width: 100%;
+    background: white;
+    cursor: pointer;
+    font-size: .85em;
+    text-align: center;
+    transition: text-indent .4s ease
+}
+
+.contents>.block {
+    padding: 2em 4em;
+    width: 80%;
+    float: left;
+    background: white;
+    display: none
+}
+
+.contents>.active {
+    display: block
+}
+
+.selected {
+    text-indent: -28%;
+    font-weight: bold
+}
+
+/*================= Themes Styles =================*/
+
+/*-- Theme-1 --*/
+
+.theme-1 .selected {
+    color: rgba(48, 170, 233, 1);
+    background-color: rgba(48, 170, 233, .02);
+    border: 1px solid;
+    border-right: none;
+    border-color: rgba(48, 170, 233, 1)
+}
+
+.theme-1 .selected:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -2px;
+    height: 3.15em;
+    width: 2px;
+    background: rgb(251, 253, 255)
+}
+
+.theme-1 .contents>.active {
+    background-color: rgba(48, 170, 233, .02);
+    border: 1px solid rgba(48, 170, 233, 1);
+}
+
+/*-- Theme-2 --*/
+
+.theme-2 .selected {
+    color: white;
+    background-color: rgba(27, 200, 228, 1);
+    border: 1px solid rgba(27, 200, 228, 1);
+    border-right: none
+}
+
+.theme-2 .selected:after {
+    content: '';
+    position: absolute;
+    top: .9em;
+    right: -.6em;
+    height: 1.5em;
+    width: 1.5em;
+    background: rgba(27, 200, 228, 1);
+    transform: rotate(45deg);
+}
+
+/*-- Theme-3 --*/
+
+.theme-3 .selected {
+    color: black;
+    background-color: white;
+    border-left: .4em solid;
+    border-color: rgba(27, 200, 228, 1);
+    font-weight: bold
+}
+
+.app:not(.theme-1) .contents>.active {
+    box-shadow: inset 0px 0px 6px 0px rgba(220, 217, 217, 0.99)
+}
+
+
+
+
+
+/*======== Start Styles ========*/
+
+#home h2,
+#features h2 {
+    color: #c1c1c1
+}
+
+#services p {
+    font-size: .9em;
+}
+
+#testimonials p {
+    width: 75%;
+    margin: auto
+}
+
+#testimonials a[data-slide="prev"] {
+    border-radius: 15px 0 0 15px
+}
+
+#testimonials a[data-slide="next"] {
+    border-radius: 0 15px 15px 0
+}
+
+#about-us p {
+    width: 80%
+}
+
+form input[type="radio"] {
+    width: 2em
+}
+
+form input:not([type='radio']),
+label {
+    width: 70%;
+    padding: .6em;
+    margin: .1em 0;
+    text-indent: 10px;
+    border-bottom: 1px solid rgba(247, 247, 247, 0.99);
+    color: #232323;
+    font-size: .9em;
+    float: left;
+}
+
+textarea {
+    width: 70%;
+    padding: 10px 15px;
+    margin: 0.4em 0 !important;
+    min-height: 20vh;
+    resize: none !important;
+    box-shadow: 0px 0px 3px 0px #e8e8e8
+}
+
+/*======== End Styles ========*/
+
+
+.tools button {
+    text-align: center
+}
+
+
+.theme-colors {
+    overflow: hidden
+}
+
+.theme-colors span {
+    position: relative;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 25px;
+    border-radius: 10%;
+    margin: 4px;
+    overflow: hidden;
+    transition: all .7s ease;
+    box-shadow: inset 0px 0px 3px 0px #ececec;
+}
+
+.fa-close {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    padding: .2em .2em;
+    background: #000000;
+    font-size: .5em !important;
+    border-radius: 0px 0px 4px 0px;
+    opacity: .8;
+    transition: all .4s .4s ease;
+}
+
+.fa-close:hover {
+    opacity: 1
+}
+
+.theme-colors span:hover {
+    transform: rotateY(180deg)
+}
+
+.theme-colors span:hover .fa-close {
+    left: 0
+}
+
+#add-color-btn {
+    background: #464040;
+    color: white;
+    float: left;
+    width: 25px;
+    text-align: center;
+    opacity: .8;
+    height: 25px;
+    margin: 2%;
+    font-size: .8em;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+#add-color-btn:hover {
+    opacity: 1
+}
+
+.tools:last-of-type {
+    text-align: center
+}
+
+#tools-theme-btn {
+    text-align: center;
+    margin: 2em auto 1em;
+    display: block;
+    background: black;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.displayed {
+    left: 0
+}
+
+.Light:not(b) {
+    background: rgba(235, 235, 235, .8);
+    color: #686363;
+}
+
+.fa-gear {
+    position: absolute;
+    top: -1px;
+    right: -26px;
+    background: black;
+    color: white;
+    padding: .4em;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}

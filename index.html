@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="width" style="position: fixed;right: 0;font-size: 30px">
+        <script>window.onresize = function () { $('#width').html((window.innerWidth)) }</script>
+    </div>
+    <div class="tools">
+        <b class="fa fa-gear"></b>
+        <h5>Tools</h5>
+        <div class="line">
+            <h6>Theme Selected : <span>1</span></h6>
+        </div>
+        <div class="line">
+            <h6>Change Theme : </h6>
+            <i>1</i><i>2</i><i>3</i>
+        </div>
+        <div class="line">
+            Default Color :
+            <div class="theme-colors"></div>
+        </div>
+        <span id="tools-theme-btn">Dark</span>
+    </div>
+
+    <div class="app em">
+        <div class="logo">
+            <img src="img/logo.png" class="img-fluid">
+        </div>
+        <ul class="tabs">
+            <li class='tab selected' data-target='home'>Home</li>
+            <li class='tab' data-target='services'>Services</li>
+            <li class='tab' data-target='features'>Features</li>
+            <li class='tab' data-target='testimonials'>Testimonials</li>
+            <li class='tab' data-target='about-us'>About Us</li>
+            <li class='tab' data-target='contact-us'>Contact Us</li>
+            <li class='tab' data-target='formulaire'>Formulaire</li>
+        </ul>
+        <div class='contents'>
+            <div id="home" class='block active'>
+                <div class='container'>
+                    <h1 class='mb-4 mt-4 mainColor'>Home</h1>
+                    <h2 class='pl-4'>Welcome To Aplha Home Web Page</h2>
+                    <p class='p-4'>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit
+                    </p>
+                </div>
+                <button class='btn mainBackgroundColor ml-4'>
+                    Read More !
+                </button>
+            </div>
+            <div id="services" class='block'>
+                <div class='container'>
+                    <h1 class='mb-4 mt-4 mainColor'>Services</h1>
+                    <div class='row p-2 text-center'>
+                        <div class='col-md-6 col-sm-6 p-2'>
+                            <h5 class='p-2'><i class='fa fa-user p-2 mainColor'></i>Service 1</h5>
+                            <p class='p-2'>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing...
+                            </p>
+                        </div>
+                        <div class='col-md-6 col-sm-6 p-2'>
+                            <h5 class='p-2'><i class='fa fa-bus p-2 mainColor'></i>Service 2</h5>
+                            <p class='p-2'>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing...
+                            </p>
+                        </div>
+                        <div class='col-md-6 col-sm-6 p-2'>
+                            <h5 class='p-2'><i class='fa fa-globe p-2 mainColor'></i>Service 3</h5>
+                            <p class='p-2'>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing...
+                            </p>
+                        </div>
+                        <div class='col-md-6 col-sm-6 p-2'>
+                            <h5 class='p-2'><i class='fa fa-envelope p-2 mainColor'></i>Service 4</h5>
+                            <p class='p-2'>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing...
+                            </p>
+                        </div>
+                        <div class='col-md-6 col-sm-6 p-2'>
+                            <h5 class='p-2'><i class='fa fa-user p-2 mainColor'></i>Service 5</h5>
+                            <p class='p-2'>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing...
+                            </p>
+                        </div>
+                        <div class='col-md-6 col-sm-6 p-2'>
+                            <h5 class='p-2'><i class='fa fa-bus p-2 mainColor'></i>Service 6</h5>
+                            <p class='p-2'>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="features" class='block'>
+                <div class='container'>
+                    <h1 class='mb-4 mt-4 mainColor'>Features</h1>
+                    <h2 class='pl-4'>Welcome To Aplha Features Web Page</h2>
+                    <p class='p-4'>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit
+                    </p>
+                </div>
+                <button class='btn mainBackgroundColor ml-4'>
+                    Read More !
+                </button>
+            </div>
+            <div id="testimonials" class='block'>
+                <h1 class='mb-4 mt-4 mainColor'>Testimonials</h1>
+                <div id='demo' class='carousel slide mt-5' data-ride='carousel1'>
+
+                    <ul class='carousel-indicators'>
+                        <li data-target='#demo' data-slide-to='0' class='active'></li>
+                        <li data-target='#demo' data-slide-to='1'></li>
+                        <li data-target='#demo' data-slide-to='2'></li>
+                    </ul>
+
+                    <div class='carousel1-inner'>
+                        <div class='carousel-item active p-5 text-center'>
+                            <img src='img/t1.png' class='p-3'>
+                            <h3 class='p-3'>Youssef Ben Kiran</h3>
+                            <p class='p-3'>This Website is The Best Source Of Js Coding 2024, That's The Fact Here ! ...
+                            </p>
+                        </div>
+                        <div class='carousel-item p-5 text-center'>
+                            <img src='img/t2.png' class='p-3'>
+                            <h3 class='p-3'>Ayoub Salmi</h3>
+                            <p class='p-3'>This Website is The Best Source Of Js Coding 2024, That's The Fact Here ! ...
+                            </p>
+                        </div>
+                        <div class='carousel-item p-5 text-center'>
+                            <img src='img/t3.png' class='p-3'>
+                            <h3 class='p-3'>Tarik Ben Kiran</h3>
+                            <p class='p-3'>This Website is The Best Source Of Js Coding 2024, That's The Fact Here ! ...
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class='carousel-control-prev mainBackgroundColor' href='#demo' data-slide='prev'>
+                        <span class='carousel-control-prev-icon'></span>
+                    </a>
+                    <a class='carousel-control-next mainBackgroundColor' href='#demo' data-slide='next'>
+                        <span class='carousel-control-next-icon'></span>
+                    </a>
+
+                </div>
+            </div>
+            <div id="about-us" class='block'>
+                <h1 class="mb-4 mt-4 mainColor">About Us</h1>
+                <p>
+                    Loremsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequrti gfijrrtik fpg,; t wisi enim ad minim
+                    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequrti
+                    gfijrrtik fpg,; trgokk
+                </p>
+            </div>
+            <div id="contact-us" class='block'>
+                <h1 class='mb-5 mt-4 mainColor'>Contact Us</h1>
+                <form class='mx-auto d-block mt-2'>
+                    <input type='text' placeholder="First Name" required>
+                    <input type='text' placeholder="Last Name" required>
+                    <input type='email' placeholder="Email" required>
+                    <input type='password' placeholder="Password" required>
+                    <input type='password' placeholder="Comfirm Password" required>
+                    <label>Gender :
+                        <input type='radio' name='gender' value="male"> Male
+                        <input type='radio' name='gender' value="female"> Female
+                    </label>
+                    <input type='phone' placeholder="Phone Number" required>
+                    <input class='btn p-2 mainBackgroundColor' type='submit' value="Login">
+                </form>
+            </div>
+            <div id="formulaire" class='block'>
+                <h1 class='mb-5 mt-4 mainColor'>Formulaire</h1>
+                <form class='mx-auto d-block mt-2'>
+                    <input type='text' placeholder="Name" required>
+                    <input type='email' placeholder="Email" required>
+                    <textarea placeholder='Message'></textarea>
+                    <input class='btn p-2 mainBackgroundColor' type='submit' value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/code.js"></script>
+
+</html>
